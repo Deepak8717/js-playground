@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+</head>
+<body>
+    <h2>Call</h2>
+    <p>Open console to check</p>
+    <script>
+        let person1 = {
+            firstname :'Piyali',
+            lastname  :'das'
+        }
+        let display = function(hometown){
+            console.log(this.firstname+''+this.lastname+'from'+hometown);
+        }
+        display.apply(person1, ['Kolkata']); //call (pointing object,)
+    </script>
+</body>
+</html>
